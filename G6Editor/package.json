@@ -85,7 +85,7 @@
     "torchjs": "~2.0.3",
     "uglify-js": "~3.1.10",
     "webpack": "~4.10.2",
-    "webpack-cli": "~3.0.0"
+    "webpack-cli": "^3.0.8"
   },
   "homepage": "https://github.com/antvis/g6-editor",
   "licenses": "GPL",
@@ -97,7 +97,8 @@
     "url": "git+https://github.com/antvis/g6-editor.git"
   },
   "scripts": {
-    "dev": "node ./demos/app.js --web --port 2047"
+    "dev": "node ./demos/app.js --web --port 2047",
+	"build": "webpack --config webpack-dev.config.js --watch"
   },
   "version": "1.2.0"
 }
